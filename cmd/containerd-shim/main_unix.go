@@ -204,7 +204,7 @@ func serve(ctx context.Context, server *ttrpc.Server, path string) error {
 		path = "[inherited from parent]"
 	} else {
 		const (
-			abstractSocketPrefix = "\x00"
+			abstractSocketPrefix = "@"
 			socketPathLimit      = 106
 		)
 		p := strings.TrimPrefix(path, "unix://")

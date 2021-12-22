@@ -243,7 +243,7 @@ func writeFile(path, address string) error {
 }
 
 const (
-	abstractSocketPrefix = "\x00"
+	abstractSocketPrefix = "@"
 	socketPathLimit      = 106
 )
 

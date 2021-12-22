@@ -114,7 +114,7 @@ func NewSocket(address string) (*net.UnixListener, error) {
 	return l.(*net.UnixListener), nil
 }
 
-const abstractSocketPrefix = "\x00"
+const abstractSocketPrefix = "@"
 
 type socket string
 

@@ -35,7 +35,7 @@ import (
 	"github.com/pkg/errors"
 )
 
-const abstractSocketPrefix = "\x00"
+const abstractSocketPrefix = "@"
 
 // TestFailFastWhenConnectShim is to test that the containerd task manager
 // should not tolerate ENOENT during restarting. In linux, the containerd shim
